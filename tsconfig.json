@@ -29,5 +29,5 @@
     "**/*.ts",
     "**/*.tsx",
     "**.*.json"
-, "jest.config.js"  ]
+  ]
 }

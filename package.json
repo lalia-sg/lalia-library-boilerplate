@@ -19,7 +19,8 @@
     "dev": "yarn watch",
     "test": "jest --watch --coverage=false --changedSince=origin/master",
     "jestDebug": "jest -o --watch --coverage=false",
-    "jest": "jest"
+    "jest": "jest",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

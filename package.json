@@ -1,6 +1,6 @@
 {
   "name": "@lalia-sg/lalia-library-boilerplate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Francis Lee <francis@u.nus.edu>",
   "license": "ISC",
@@ -17,9 +17,9 @@
     "build": "rollup -c",
     "watch": "rollup -cw",
     "dev": "yarn watch",
-    "test": "jest --watch --coverage=false --changedSince=origin/master",
+    "test": "jest",
+    "jest": "jest --watch --coverage=false --changedSince=origin/master",
     "jestDebug": "jest -o --watch --coverage=false",
-    "jest": "jest",
     "lint": "eslint ."
   },
   "devDependencies": {

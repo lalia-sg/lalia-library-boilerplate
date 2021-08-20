@@ -1,12 +1,12 @@
 {
   "name": "@lalia-sg/lalia-library-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "> TODO: description",
   "author": "Francis Lee <francis@u.nus.edu>",
   "license": "ISC",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
-  "typings": "./dist/types/index.d.ts",
+  "typings": "./dist/index.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__"
@@ -15,14 +15,15 @@
     "src"
   ],
   "scripts": {
-    "build": "rollup -c && tsc",
+    "build": "rollup -c && tsc && yarn api",
     "watch": "rollup -cw",
     "dev": "yarn watch",
     "test": "jest",
     "jest": "jest --watch --coverage=false --changedSince=origin/master",
     "jestDebug": "jest -o --watch --coverage=false",
     "lint": "eslint .",
-    "ci": "yarn install --frozen-lockfile"
+    "ci": "yarn install --frozen-lockfile",
+    "api": "api-extractor run --local --verbose"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

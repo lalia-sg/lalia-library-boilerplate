@@ -12,11 +12,12 @@
     "preserveConstEnums": true,
     "allowSyntheticDefaultImports": true,
     "target": "es5",
-    "declarationDir": "dist/types",
+    "declarationDir": "dist/dts",
     "types": ["jest", "node"],
     // Ensure that .d.ts files are created by tsc, but not .js files
     "declaration": true,
     "declarationMap": true,
+    // using babel to transpile TS -> JS
     "emitDeclarationOnly": true,
     // Ensure that Babel can safely transpile files in the TypeScript project
     "isolatedModules": true,

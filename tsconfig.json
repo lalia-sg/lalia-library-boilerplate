@@ -16,6 +16,7 @@
     "types": ["jest", "node"],
     // Ensure that .d.ts files are created by tsc, but not .js files
     "declaration": true,
+    "declarationMap": true,
     "emitDeclarationOnly": true,
     // Ensure that Babel can safely transpile files in the TypeScript project
     "isolatedModules": true,
@@ -23,11 +24,13 @@
   },
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
   ],
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**.*.json"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**.*.json"
   ]
 }

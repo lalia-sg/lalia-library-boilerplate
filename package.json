@@ -6,6 +6,7 @@
   "license": "ISC",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
+  "typings": "./dist/types/index.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__"
@@ -14,7 +15,7 @@
     "src"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && tsc",
     "watch": "rollup -cw",
     "dev": "yarn watch",
     "test": "jest",
@@ -27,11 +28,12 @@
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
+    "@microsoft/api-extractor": "^7.18.5",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^20.0.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@types/jest": "^27.0.1",
-    "@types/node": "^16.6.1",
+    "@types/node": "^16.6.2",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "babel-jest": "^27.0.6",

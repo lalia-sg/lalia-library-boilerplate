@@ -22,7 +22,7 @@
     "jest": "jest --watch --coverage=false --changedSince=origin/master",
     "jestDebug": "jest -o --watch --coverage=false",
     "lint": "eslint .",
-    "ci": "yarn install --frozen-lockfile",
+    "ci": "yarn install --frozen-lockfile && yarn build",
     "api": "api-extractor run --local --verbose"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Publish on Push and PR 
 
 on:
   push:
@@ -25,17 +25,12 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v2
-        with:
-          persist-credentials: true
-          fetch-depth: 0
       - uses: actions/setup-node@v2
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
       - run: yarn ci
-      # - run: git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com" && git config --global user.name "$GITHUB_ACTOR"
-      - run: yarn version --patch
-      - run: git push --tags && git push
+      - run: yarn build
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

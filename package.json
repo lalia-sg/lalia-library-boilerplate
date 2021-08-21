@@ -1,12 +1,12 @@
 {
   "name": "@lalia-sg/lalia-library-boilerplate",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "> TODO: description",
   "author": "Francis Lee <francis@u.nus.edu>",
   "license": "ISC",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
-  "typings": "./dist/index.d.ts",
+  "typings": "./dist/lalia-library-boilerplate.d.ts",
   "directories": {
     "src": "src",
     "test": "__tests__"

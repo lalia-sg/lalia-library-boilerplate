@@ -15,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c && tsc && yarn api",
+    "build": "rollup -c && tsc && yarn api && yarn docs",
     "watch": "rollup -cw",
     "dev": "yarn watch",
     "test": "jest",
@@ -23,12 +23,14 @@
     "jestDebug": "jest -o --watch --coverage=false",
     "lint": "eslint .",
     "ci": "yarn install --frozen-lockfile && yarn build",
-    "api": "api-extractor run --local --verbose"
+    "api": "api-extractor run --local --verbose",
+    "docs": "api-documenter markdown --input-folder temp --output-folder docs"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-typescript": "^7.15.0",
+    "@microsoft/api-documenter": "^7.13.40",
     "@microsoft/api-extractor": "^7.18.5",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^20.0.0",
@@ -42,6 +44,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-tsdoc": "^0.2.14",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
     "rollup": "^2.56.2",

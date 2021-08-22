@@ -4,10 +4,10 @@
 
 ```ts
 
-// @public (undocumented)
+// @beta @sealed
 export function sum(inputs: SumInputs): number;
 
-// @public (undocumented)
+// @public
 export type SumInputs = {
     a: number;
     b: number;

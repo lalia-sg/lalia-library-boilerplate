@@ -41,6 +41,9 @@ const { sum } = require('sum');
 // TODO: DEMONSTRATE API
 ```
 
+## Semantic Release
+https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md
+https://github.com/semantic-release/git
 
 ## Generate new token
 
@@ -51,3 +54,4 @@ Check `read:packages Download packages from GitHub Package Registry`
 
 npm login --scope=@lalia-sg --registry=https://npm.pkg.github.com
 npm logout
+

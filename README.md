@@ -32,16 +32,25 @@
     git merge template --allow-unrelated-histories
     ```
 
-
 ## Usage
 
-```
+```ts
 const { sum } = require('sum');
 
 // TODO: DEMONSTRATE API
 ```
 
+## Tooling
+
+Transpile with Babel
+Bundle with Rollup
+Generate type declarations with tsc
+Bundle type declarations with api-extractor
+Generate docs with api-documenter
+Manage releases with semantic-release
+
 ## Semantic Release
+
 https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md
 https://github.com/semantic-release/git
 
@@ -54,4 +63,3 @@ Check `read:packages Download packages from GitHub Package Registry`
 
 npm login --scope=@lalia-sg --registry=https://npm.pkg.github.com
 npm logout
-

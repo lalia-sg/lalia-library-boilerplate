@@ -1,8 +1,6 @@
-name: Publish on Push and PR 
+name: Test on PR 
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 

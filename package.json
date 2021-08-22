@@ -1,6 +1,6 @@
 {
   "name": "@lalia-sg/lalia-library-boilerplate",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "> TODO: description",
   "author": "Francis Lee <francis@u.nus.edu>",
   "license": "ISC",
@@ -12,7 +12,7 @@
     "test": "__tests__"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "scripts": {
     "build": "rollup -c && tsc && yarn api",

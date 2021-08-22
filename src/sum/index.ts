@@ -1,8 +1,7 @@
 /**
- * @public
- *
  * An object that contains inputs to be summed
  *
+ * @public
  */
 export type SumInputs = {
   a: number;
@@ -10,8 +9,6 @@ export type SumInputs = {
 };
 
 /**
- * @beta
- *
  * The summary section should be brief. On a documentation web site,
  * it will be shown on a page that lists summaries for many different
  * API items.  On a detail page for a single item, the summary will be
@@ -63,6 +60,8 @@ export type SumInputs = {
  * previous block.
  *
  * @sealed
+ *
+ * @beta
  */
 export default function sum(inputs: SumInputs): number {
   return inputs.a + inputs.b;

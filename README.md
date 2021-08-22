@@ -49,5 +49,5 @@ https://github.com/settings/tokens
 Check `repo Full control of private repositories`
 Check `read:packages Download packages from GitHub Package Registry`
 
-npm login --registry=https://npm.pkg.github.com
+npm login --scope=@lalia-sg --registry=https://npm.pkg.github.com
 npm logout
